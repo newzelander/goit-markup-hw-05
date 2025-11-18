@@ -405,9 +405,11 @@
         </div>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="page-footer">
       <div class="container footer-container">
+        <!-- LEFT INFO BLOCK -->
         <div class="footer-info-div">
           <a class="logo footer-logo" href="./index.html">
             Web<span class="logo-part">Studio</span>
@@ -417,32 +419,34 @@
             digital marketing & growth solutions.
           </p>
         </div>
+
+        <!-- SOCIALS -->
         <div class="footer-soc-div">
           <p class="social-par">Social media</p>
           <ul class="icons-list">
             <li class="icon-item">
-              <a class="icon-link" href="">
+              <a class="icon-link" href="#">
                 <svg class="icon-soc" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icon-link" href="">
+              <a class="icon-link" href="#">
                 <svg class="icon-soc" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icon-link" href="">
+              <a class="icon-link" href="#">
                 <svg class="icon-soc" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icon-link" href="">
+              <a class="icon-link" href="#">
                 <svg class="icon-soc" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -450,7 +454,118 @@
             </li>
           </ul>
         </div>
+
+        <!-- SUBSCRIBE FORM -->
+        <div class="footer-form-wrapper">
+          <p class="social-par">Subscribe</p>
+          <form class="footer-form" action="#" method="post">
+            <label>
+              <input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="subs-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subs-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL POP UP -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="close-modal-btn">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-par">Leave your contacts and we will call you back</p>
+
+          <div class="form-field">
+            <label class="form-label" for="input-name">Name</label>
+            <div class="input-wrapper">
+              <input
+                class="form-input"
+                name="input-name"
+                id="input-name"
+                type="text"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="input-tel">Phone</label>
+            <div class="input-wrapper">
+              <input
+                class="form-input"
+                name="input-tel"
+                id="input-tel"
+                type="tel"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="input-email">Email</label>
+            <div class="input-wrapper">
+              <input
+                class="form-input"
+                name="input-email"
+                id="input-email"
+                type="email"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="input-comment">Comment</label>
+            <textarea
+              class="text-area"
+              name="description"
+              id="input-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="check-container">
+            <input
+              type="checkbox"
+              class="checkbox-input visually-hidden"
+              id="terms"
+            />
+            <label class="check-label" for="terms">
+              <span class="custom-checkbox">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="policy-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="hero-btn modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
