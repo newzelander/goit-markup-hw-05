@@ -483,14 +483,16 @@
     <!-- MODAL POP UP -->
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="close-modal-btn">
+        <button type="button" class="close-modal-btn">
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <p class="modal-par">Leave your contacts and we will call you back</p>
 
+        <p class="modal-par">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+          <!-- Name field -->
           <div class="form-field">
             <label class="form-label" for="input-name">Name</label>
             <div class="input-wrapper">
@@ -506,6 +508,7 @@
             </div>
           </div>
 
+          <!-- Phone field -->
           <div class="form-field">
             <label class="form-label" for="input-tel">Phone</label>
             <div class="input-wrapper">
@@ -521,6 +524,7 @@
             </div>
           </div>
 
+          <!-- Email field -->
           <div class="form-field">
             <label class="form-label" for="input-email">Email</label>
             <div class="input-wrapper">
@@ -536,6 +540,7 @@
             </div>
           </div>
 
+          <!-- Comment field -->
           <div class="form-field">
             <label class="form-label" for="input-comment">Comment</label>
             <textarea
@@ -546,6 +551,7 @@
             ></textarea>
           </div>
 
+          <!-- Terms checkbox -->
           <div class="check-container">
             <input
               type="checkbox"
@@ -563,6 +569,7 @@
             </label>
           </div>
 
+          <!-- Submit button -->
           <button type="submit" class="hero-btn modal-send-btn">Send</button>
         </form>
       </div>
