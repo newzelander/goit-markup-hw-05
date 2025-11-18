@@ -626,6 +626,10 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-form .form-field:last-child {
+  margin-bottom: 16px;
+}
+
 .form-label {
   display: block;
   font-weight: 400;
